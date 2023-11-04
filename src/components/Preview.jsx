@@ -6,6 +6,7 @@ import 'swiper/css';
 import Book from './Book'
 import BookDetail from './BookDetail'
 export default function Preview() {
+  const API_KEY = process.env.REACT_APP_GOOGLE_BOOKS_API_KEY
   const [book1, setBook1] =useState([]);
   const [book2, setBook2] =useState([]);
   const [book3, setBook3] =useState([]);
@@ -17,7 +18,7 @@ export default function Preview() {
           .get(
             "https://www.googleapis.com/books/v1/volumes?q=" +
               "Verity" +
-              "&key=AIzaSyBdBDaZP2ZxWL1_X3rhMEi1PXnKxRXpcrM" +
+              `&key=${API_KEY}` +
               "&maxResults=30"
           )
           .then((res) => {
@@ -29,7 +30,7 @@ export default function Preview() {
           .get(
             "https://www.googleapis.com/books/v1/volumes?q=" +
               "Ugly Love by Colleen Hoover" +
-              "&key=AIzaSyBdBDaZP2ZxWL1_X3rhMEi1PXnKxRXpcrM" +
+              `&key=${API_KEY}` +
               "&maxResults=30"
           )
           .then((res) => {
@@ -40,14 +41,14 @@ export default function Preview() {
           .get(
             "https://www.googleapis.com/books/v1/volumes?q=" +
               "Steve Jobs" +
-              "&key=AIzaSyBdBDaZP2ZxWL1_X3rhMEi1PXnKxRXpcrM" +
+              `&key=${API_KEY}` +
               "&maxResults=30"
           )
           .then((res) => {
             setBook3(res.data.items)
           })
           .catch((err) => console.log(err));
-  },[])
+  },[API_KEY])
   
 
   return (
