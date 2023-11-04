@@ -20,7 +20,6 @@ export default function Books() {
           )
           .then((res) => {
             setData(res.data.items)
-            console.log(res.data.items)
           })
           .catch((err) => console.log(err));
       }
@@ -59,7 +58,7 @@ export default function Books() {
               (   <div>
                   <div onClick={()=>{setShow(true);setItem(book)}}>
                   <Book 
-                  key={book.id}
+                  key={index}
                   className="gg"
                   book={book}
                   />
@@ -79,7 +78,7 @@ export default function Books() {
               (<div>
                 <div onClick={()=>{setShow(true);setItem(book)}}>
                 <Book 
-                key={book.id}
+                key={index}
                 className="gg"
                 book={book}
                 />

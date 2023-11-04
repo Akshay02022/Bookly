@@ -5,9 +5,7 @@ function Navbar() {
     
   <header className="header" data-header>
     <div className="container">
-
-      <a href="#" className="logo">Bookly</a>
-
+      <a href="#home"className="logo">Bookly</a>
       <nav className="navbar" data-navbar>
         <ul className="navbar-list">
 
@@ -31,9 +29,9 @@ function Navbar() {
       </nav>
 
       <button className="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true" className="open"></ion-icon>
+        <ion-icon name="menu-outline" aria-hidden="true" className="open">A</ion-icon>
 
-        <ion-icon name="close-outline" aria-hidden="true" className="close"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" className="close">B</ion-icon>
       </button>
 
     </div>

@@ -31,11 +31,9 @@ import benefits6 from "../images/benefits6.svg"
                 "By reading books, you'll gain a wealth of knowledge, broaden your horizons, and immerse yourself in diverse worlds and experiences"
                 </p>
 
-                <a href="#" className="btn-link">
+                <p  className="btn-link">
                   <span className="span">Read more</span>
-
-                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </p>
 
               </div>
             </li>
@@ -53,11 +51,9 @@ import benefits6 from "../images/benefits6.svg"
                 "Reading books are wellspring. Within their pages, you'll find stories of resilience, triumph over adversity, and the spirit's indomitable nature"
                 </p>
 
-                <a href="#" className="btn-link">
+                <p  className="btn-link">
                   <span className="span">Read more</span>
-
-                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </p>
 
               </div>
             </li>
@@ -75,11 +71,9 @@ import benefits6 from "../images/benefits6.svg"
                 "Reading books can help you achieve a multitude of goals. You can enhance your knowledge and expertise in various subjects"
                 </p>
 
-                <a href="#" className="btn-link">
+                <p  className="btn-link">
                   <span className="span">Read more</span>
-
-                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </p>
 
               </div>
             </li>
@@ -97,11 +91,9 @@ import benefits6 from "../images/benefits6.svg"
                 "Reading books can help you shape a vision of the world. It enables you to gain insights into different cultures, perspectives, and ideas"
                 </p>
 
-                <a href="#" className="btn-link">
+                <p  className="btn-link">
                   <span className="span">Read more</span>
-
-                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </p>
 
               </div>
             </li>
@@ -119,11 +111,9 @@ import benefits6 from "../images/benefits6.svg"
                   "Mission of reading books is to become a more informed, enlightened individual who contributes positively to the world"
                 </p>
 
-                <a href="#" className="btn-link">
+                <p  className="btn-link">
                   <span className="span">Read more</span>
-
-                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </p>
 
               </div>
             </li>
@@ -141,11 +131,9 @@ import benefits6 from "../images/benefits6.svg"
                   "Reading books is a strategic investment in personal and intellectual growth. It's a deliberate choice to acquire knowledge"
                 </p>
 
-                <a href="#" className="btn-link">
+                <p className="btn-link">
                   <span className="span">Read more</span>
-
-                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </p>
 
               </div>
             </li>

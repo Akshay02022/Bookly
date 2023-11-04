@@ -22,8 +22,6 @@ export default function Preview() {
           )
           .then((res) => {
             setBook1(res.data.items)
-            console.log(res.data.items)
-            console.log("Happry POtter")
           })
           .catch((err) => console.log(err));
 
@@ -36,8 +34,6 @@ export default function Preview() {
           )
           .then((res) => {
             setBook2(res.data.items)
-            console.log(res.data.items)
-            console.log("Happry POtter")
           })
           .catch((err) => console.log(err));
     axios
@@ -49,8 +45,6 @@ export default function Preview() {
           )
           .then((res) => {
             setBook3(res.data.items)
-            console.log(res.data.items)
-            console.log("Happry POtter")
           })
           .catch((err) => console.log(err));
   },[])
@@ -68,24 +62,39 @@ export default function Preview() {
           </h2>
 
           <Swiper
-            spaceBetween={500}
-            slidesPerView={3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              414: {
+                spaceBetween:0,
+                slidesPerView:1
+              },
+              768: {
+                spaceBetween:100,
+                slidesPerView:2
+              },
+              1200: {
+                spaceBetween:500,
+                slidesPerView:3
+              }
+            }}
+            spaceBetween={0}  
+            slidesPerView={1}
           >
             {
             book1?.map((book, index) => (
               book?.saleInfo?.listPrice?.amount !== undefined
               &&
               (
-                <div className='swiper'>
-                  <SwiperSlide >
+                <div 
+                  key={`${index}${book.id}`}
+                  className='swiper'>
+                  <SwiperSlide key={`${index}${book.id}`}>
+                  {console.log(`${index}${book.id}`)}
                   <div onClick={()=>{setShow(true);setItem(book)}}>
                     <Book 
-                    key={book.id}
                     className="gg swiper"
                     book={book}
                     />
+                    
                   </div>
                   </SwiperSlide>
                 </div>
@@ -95,23 +104,36 @@ export default function Preview() {
             <BookDetail show={show} item={bookItem} onClose={()=>setShow(false)}/>  
           </Swiper>
           <Swiper
-            spaceBetween={500}
-            slidesPerView={3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              414: {
+                spaceBetween:0,
+                slidesPerView:1
+              },
+              768: {
+                spaceBetween:100,
+                slidesPerView:2
+              },
+              1200: {
+                spaceBetween:500,
+                slidesPerView:3
+              }
+            }}
+            spaceBetween={0}  
+            slidesPerView={1}
           >
             {
             book2?.map((book, index) => (
               book?.saleInfo?.listPrice?.amount !== undefined
               &&
               (
-                <div className='swiper'>
-                  <SwiperSlide >
+                <div
+                  key={`${book.id}${index}`}
+                  className='swiper'>
+                  <SwiperSlide key={`${book.id}${index}`} >
+                  {console.log(`${book.id}${index}`)}
                   <div onClick={()=>{setShow(true);setItem(book)}}>
                     <Book 
-                    key={book.id}
                     className="gg swiper"
-                    
                     book={book}
                     />
                   </div>
@@ -123,23 +145,36 @@ export default function Preview() {
             <BookDetail show={show} item={bookItem} onClose={()=>setShow(false)}/>  
           </Swiper>
           <Swiper
-            spaceBetween={500}
-            slidesPerView={3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              414: {
+                spaceBetween:0,
+                slidesPerView:1
+              },
+              768: {
+                spaceBetween:100,
+                slidesPerView:2
+              },
+              1200: {
+                spaceBetween:500,
+                slidesPerView:3
+              }
+            }}
+            spaceBetween={0}  
+            slidesPerView={1}
           >
             {
             book3?.map((book, index) => (
               book?.saleInfo?.listPrice?.amount !== undefined
               &&
               (
-                <div className='swiper'>
-                  <SwiperSlide >
+                <div 
+                  key={`${book.id}`} 
+                  className='swiper'>
+                  <SwiperSlide  key={`${book.id}`} >
+                  {console.log(`${book.id}`)}
                   <div onClick={()=>{setShow(true);setItem(book)}}>
                     <Book 
-                    key={book.id}
                     className="gg swiper"
-                    
                     book={book}
                     />
                   </div>

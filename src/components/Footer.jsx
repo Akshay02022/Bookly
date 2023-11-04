@@ -5,10 +5,10 @@ export default function Footer() {
       <footer className="footer">
         <div className="container">
           <div className="footer-top">
-            <a href="#" className="logo">Bookly</a>
+            <a href="#home" className="logo">Bookly</a>
             <ul className="footer-list">
               <li>
-                <a href="#" className="footer-link">Home</a>
+                <a href='#home' className="footer-link">Home</a>
               </li>
               <li>
                 <a href="#benefits" className="footer-link">Benefits</a>

@@ -112,8 +112,8 @@ span,
 data,
 input,
 button,
-textarea,
-ion-icon { display: block; }
+textarea
+{ display: block; }
 
 a {
   color: inherit;
@@ -137,7 +137,6 @@ button { cursor: pointer; }
 
 address { font-style: normal; }
 
-ion-icon { pointer-events: none; }
 
 html {
   font-family: var(--ff-poppins);
@@ -350,7 +349,6 @@ body {
   color: var(--charcoal);
 }
 
-.nav-toggle-btn ion-icon { --ionicon-stroke-width: 20px; }
 
 .nav-toggle-btn.active .open,
 .nav-toggle-btn .close { display: none; }
@@ -1226,6 +1224,7 @@ textarea.input-field {
 
 #cover {
   width: 30vw;
+  min-width: 250px; 
   padding: 5px;
   margin: 50px auto;
   background-color: #fcb0b4;
@@ -1266,6 +1265,7 @@ textarea.input-field {
   overflow: hidden;
   transition: var(--transition-2);
   width: 30vw;
+  min-width: 350px;
   display: flex;
 }
 .book-card::before,
